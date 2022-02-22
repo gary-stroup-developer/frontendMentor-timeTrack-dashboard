@@ -1,0 +1,15 @@
+:root {
+    --background-blue: #191970;
+    --background-blue-hover: #5858b4;
+    --user-card-background: #6715ff;
+    --font-color-purple: #CCCCFF;
+    --font-color-purple-user: #5D3FD3;
+    --font-color-white: #FAFAFA;
+    --work: #ff7418;
+    --play: #1ec3f5;
+    --study: rgb(255, 41, 41);
+    --social: #7F00FF;
+    --exercise: rgb(83, 248, 83);
+    --self-care: rgb(255, 255, 95);
+}
+
