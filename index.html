@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="./styles.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -15,61 +16,26 @@
   </style>
 </head>
 <body>
-
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+  <div class="grid-container">
+    <section class="grid-item user-card">
+      <div id="user-card-top">
+        <img src="./images/image-jeremy.png" alt="user profile image">
+        <p>Report for</p>
+        <p>Jeremy Robson</p>
+      </div>
+      <div id="user-card-btm">
+        <p>Daily</p>
+        <p>Weekly</p>
+        <p>Monthly</p>
+      </div>
+    </section>
+    <section class="grid-item work"><div></div></section>
+    <section class="grid-item play"><div></div></section>
+    <section class="grid-item study"><div></div></section>
+    <section class="grid-item exercise"><div></div></section>
+    <section class="grid-item social"><div></div></section>
+    <section class="grid-item self-care"><div></div></section>
+  </div>"
 
   
   <div class="attribution">

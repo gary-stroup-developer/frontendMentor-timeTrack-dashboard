@@ -13,3 +13,57 @@
     --self-care: rgb(255, 255, 95);
 }
 
+html {
+    font-size: 62.5%;
+    background-color: var(--background-blue);
+    color: var(--font-color-white);
+}
+
+img {
+    width: 25%;
+    height: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'user-card work play study'
+    'user-card exercise social self-care'
+    ;
+    gap: 1rem;
+}
+
+.user-card {
+    grid-area: user-card;
+    background-color: var(--user-card-background);
+}
+
+.work {
+    grid-area: work;
+    background-color: var(--work);
+}
+
+.play {
+    grid-area: play;
+    background-color: var(--play);
+}
+
+.study {
+    grid-area: study;
+    background-color: var(--study);
+}
+
+.exercise {
+    grid-area: exercise;
+    background-color: var(--exercise);
+}
+
+.social {
+    grid-area: social;
+    background-color: var(--social);
+}
+
+.self-care {
+    grid-area: self-care;
+    background-color: var(--self-care);
+}
