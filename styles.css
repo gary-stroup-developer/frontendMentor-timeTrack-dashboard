@@ -15,28 +15,69 @@
 
 html {
     font-size: 62.5%;
-    background-color: var(--background-blue);
+    font-family: 'Roboto', sans-serif;
     color: var(--font-color-white);
+    background-color: rgb(2, 2, 27);
 }
 
 img {
-    width: 25%;
+    width: 45%;
     height: auto;
+    border: 3px solid var(--font-color-white);
+    border-radius: 50%;
 }
 
 .grid-container {
     display: grid;
+    grid-template-columns: 250px 1fr 1fr 1fr;
     grid-template-areas: 
-    'user-card work play study'
-    'user-card exercise social self-care'
+    'user-card  work  play  study  '
+    'user-card  exercise  social  self-care  '
     ;
     gap: 1rem;
+    width: 80%;
+    margin: 2.5% auto;
 }
+
 
 .user-card {
     grid-area: user-card;
-    background-color: var(--user-card-background);
 }
+
+#user-card-top {
+    background-color: var(--user-card-background);
+    border-radius: 1.6rem;
+    font-size: 4rem;
+    padding: 0.75em;
+    position: relative;
+    z-index: 2;
+}
+
+#user-card-top span {
+    display: block;
+}
+
+.report-for {
+    color: var(--font-color-purple);
+    font-size: 1.4rem;
+   
+}
+
+
+#user-card-btm {
+    background-color: var(--background-blue);
+    border-radius: 1.6rem;
+    padding: 2em 2em 1em 2em;
+    font-size: 1.8rem;
+    position: relative;
+    top: -2.5rem;
+    height: 30%;
+}
+
+#user-card-btm p:hover {
+    color: var(--background-blue-hover);
+}
+
 
 .work {
     grid-area: work;
