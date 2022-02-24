@@ -20,6 +20,10 @@ html {
     background-color: rgb(2, 2, 27);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 img {
     width: 45%;
     height: auto;
@@ -34,7 +38,7 @@ img {
     'user-card  work  play  study  '
     'user-card  exercise  social  self-care  '
     ;
-    gap: 1rem;
+    gap: 3rem;
     width: 80%;
     margin: 2.5% auto;
 }
@@ -79,9 +83,39 @@ img {
 }
 
 
+
+.grid-item {
+    background-color: var(--background-blue);
+    position:relative;
+    height: 80%;
+    bottom: -20%;
+}
+
+.grid-item-row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    padding: 0.5em;
+}
+
+.grid-item-row2 {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 2.5em;
+}
+
+.grid-item-row2 span {
+    font-size: 1.6rem;
+    display: block;
+    margin-top: 2rem;
+}
+
+
 .work {
     grid-area: work;
     background-color: var(--work);
+    height: 100%;
 }
 
 .play {
@@ -107,4 +141,31 @@ img {
 .self-care {
     grid-area: self-care;
     background-color: var(--self-care);
+}
+
+@media (max-width: 950px) {
+    .grid-container {
+        grid-template-columns:max-content;
+        grid-template-areas: 
+        'user-card ' 
+        'work'  
+        'play'  
+        'study'
+        'exercise'  
+        'social'  
+        'self-care'
+        ;
+        width: 60%;
+        margin: 0 auto;
+    }
+    #user-card-btm  {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    .user-card {
+        margin-bottom: 2rem;
+    }
 }
