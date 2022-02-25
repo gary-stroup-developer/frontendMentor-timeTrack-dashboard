@@ -4,15 +4,18 @@
     "timeframes": {
       "daily": {
         "current": 5,
-        "previous": 7
+        "previous": 7,
+        "name":"xxx"
       },
       "weekly": {
         "current": 32,
-        "previous": 36
+        "previous": 36,
+        "name":"xxx"
       },
       "monthly": {
         "current": 103,
-        "previous": 128
+        "previous": 128,
+        "name":"xxx"
       }
     }
   },
