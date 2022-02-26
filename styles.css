@@ -7,7 +7,7 @@
     --font-color-white: #FAFAFA;
     --work: #ff7418;
     --play: #1ec3f5;
-    --study: rgb(255, 41, 41);
+    --study: rgb(192, 0, 0);
     --social: #7F00FF;
     --exercise: rgb(83, 248, 83);
     --self-care: rgb(255, 255, 95);
@@ -120,34 +120,46 @@ svg {
 }
 
 .work {
+    position: relative;
     grid-area: work;
     background-color: var(--work);
 }
 
 .play {
+    position: relative;
     grid-area: play;
     background-color: var(--play);
 }
 
 .study {
+    position: relative;
     grid-area: study;
     background-color: var(--study);
 }
 
 .exercise {
+    position: relative;
     grid-area: exercise;
     background-color: var(--exercise);
 }
 
 .social {
     grid-area: social;
+    position: relative;
     background-color: var(--social);
 }
 
 
 .self-care {
+    position: relative;
     grid-area: self-care;
     background-color: var(--self-care);
+}
+
+.icon {
+    position:absolute;
+    top: 5px;
+    right: 20px;
 }
 
 @media (max-width: 950px) {
