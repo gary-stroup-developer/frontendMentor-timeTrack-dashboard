@@ -113,9 +113,11 @@ svg {
     margin-bottom: 2.5em;
 }
 
-.grid-item-row2 span {
+.grid-item-row2 p span {
     font-size: 1.6rem;
     display: block;
+    color: var(--font-color-purple);
+    margin-top: 25px;
    
 }
 
@@ -164,7 +166,8 @@ svg {
 
 @media (max-width: 950px) {
     .grid-container {
-        grid-template-columns: max-content;
+        grid-template-columns: minmax(250px,300px);
+        justify-content: center;
         grid-template-areas: 
         'user-card'  
         'work'  
@@ -174,10 +177,10 @@ svg {
         'social'  
         'self-care'
         ;
-        width: 60%;
-        margin: 0 auto;
+        width: 90%;
     }
 
+ 
     #user-card-btm {
         display: flex;
         flex-wrap: wrap;
